@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>  
+        <meta charset="utf-8">
+        <title> Testando formulários</title>
+    </head>
+    <body>
+       <!-- Formulário -->
+        <form action="" method="post">
+            <label for="nome">Nome</label>
+            <input type="text" name="Nome" id = "nome"
+                value="João" maxlength="100"><br>
+             <input type="number" name="idade" id="idade"
+                 placeholder="Digite a sua idade" min="0" step = "0.01"><br>
+                 <input type="email" name="email" id="email"
+                 placeholder="Digite o seu e-mail" ><br>
+            <input type="date" name="nascimento"
+            id="nascimento" placeholder="Nascimento"><br>
+            <input type="hidden" name="codigo" id="codigo"
+            value="10"><br>
+            <input type='range' name="volume" id="volume"
+            min="0" max="100" value="100"><br>
+        <input type="color" name="cor" id="cor"><br>
+          <input type="radio" name="genero" id="Rock"
+             value="1"> <checked>
+              <label for="Rock">Rock</label><br>
+          <input type="radio" name="genero" id="Pop"
+             value="2">
+              <label for="Pop">Pop</label><br>
+          <input type="radio" name="genero" id="Jazz"
+             value="3">
+               <label for="Jazz">Jazz</label><br>
+        <!-- combobox -->
+        <input type="checkbox" name="interesse" id="noticia" value="n">
+            <label for="noticia">Notícias</label><br>
+        <input type="checkbox" name="interesse" id="esporte" value="e">
+            <label for="esporte">Esporte</label><br>
+        <select name="dispositivo" id="dispositivo">
+            <option value="Smart">Smartphone</option>
+            <option value="ipad">Ipad</option>
+            <option value="mp3">mp3 player</option>
+        </select><br>
+        <fieldset>
+        <label for="comentario">Comentário</label>
+        <textarea name="comentario" id="comentario" cols="30" rows="5"></textarea>
+             <legend>Envio de arquivo</legend>
+             <input type="file" name="foto" id="foto"
+              accept=".jpg" multiple><br>
+        </fieldset>            
+            <input type="submit" value="Enviar">
+            <input type="reset"  value="Limpar">
+            <input type="button" value="Validar">
+            <progress max="100" value="50"></progress>
+            <meter max="100" name="volume" value="60"></meter>
+        </form>
+    </body>    
